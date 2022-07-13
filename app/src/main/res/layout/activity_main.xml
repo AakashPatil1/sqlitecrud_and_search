@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="STUDENT FROM "
+        android:textColor="@color/txt"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/edtRollNo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg"
+        android:hint="Enter RollNo"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/edtRollNo"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg"
+        android:hint="Enter First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/edtFirstName"
+        android:hint="Enter Last Name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtID"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/edtLastName"
+        android:hint="Enter ID"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtID"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btn_green"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDelete"
+        android:backgroundTint="@color/btn_green"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtID"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/btnDelete"
+        android:backgroundTint="@color/btn_green"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/btnSave"
+        android:backgroundTint="@color/btn_green"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnUpdate"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/btn_green"
+        android:text="Show" />
+</RelativeLayout>
